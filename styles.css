@@ -1,0 +1,191 @@
+/*
+CSS Reset
+*/
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*,*:before,*:after {
+    box-sizing: inherit;
+}
+
+body,h1,h2,h3,h4,h5,h6,p,ol,ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+ol,ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* 
+End of CSS reset
+ */
+
+/* icons */
+.float-icon {
+    margin: 3px;
+    margin-right: 8px;
+    float: left;
+}
+
+body {
+    color: #bebebe;
+    background-color: #131028;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+hr {
+    clear: both;
+    margin: 28px 16px 16px 16px;
+}
+
+a {
+    color: #efd18d;
+}
+
+a:hover {
+    color: white;
+}
+
+h1 {
+    color: #e9a321;
+}
+
+.header,.content {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.links {
+    position: fixed;
+    right: 16px;
+    top: 16px;
+    width: 128px;
+}
+
+.links img {
+    margin-bottom: 4px;
+}
+
+.blink_me {
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+.linkIcon * {
+    vertical-align: middle;
+}
+
+.linkIcon img {
+    margin-right: 8px;
+}
+
+
+.header {
+    padding-top: 16px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-variant: small-caps;
+    text-align: center;
+    background-color: #070033;
+    background-image: url('images/header.png');
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    height: 106px;
+    text-shadow: 0px 0px 8px black;
+}
+
+.header h1 {
+}
+
+.header .menu {
+ display: block;
+}
+
+.header .menu a {
+    display: inline-block;
+    padding: 8px 16px 8px 16px;
+    margin: 4px;
+    font-size: 24px;
+}
+
+.content {
+    padding: 8px;
+    background-color: #545d73;
+}
+
+.article h1, .article h2, .article h3  {
+    font-variant: small-caps;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.article p {
+    margin-bottom: 8px;
+}
+
+.article ul {
+    list-style: square;
+    padding-left: 32px;
+}
+
+.article ol {
+    list-style: decimal;
+    padding-left: 32px;
+}
+
+.article li {
+    margin-bottom: 4px;
+}
+
+.article hr {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.shader .images {
+    text-align: center;
+}
+
+.shader .image {
+    text-align: center;
+    display: inline-block;
+    width: 250px;
+}
+
+.shader .image:hover {
+    width: auto !important;
+}
+
+.shader .image.half {
+    width: 375px;
+}
+
+.shader .image.big {
+    width: auto;
+}
+
+.shader .image .title {
+    font-weight: bold;
+}
+
+.shader img {
+}

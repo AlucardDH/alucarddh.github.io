@@ -1,0 +1,208 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>AlucardDH - Github</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="links">
+        <img src="images/neon-arrow.png" class="float-icon blink_me" style="width:64px;margin-top: 42px;">
+        <a href="https://discord.gg/V9HgyBRgMW" title="My Discord server"><img src="icons/discord-logo.png" style="width: 32px;" /></a>
+        <a href="https://github.com/AlucardDH/dh-reshade-shaders" title="My shaders GitHub"><img src="icons/github-logo.png" style="width: 32px;" /></a>
+        <a href="https://www.linkedin.com/in/damien-hembert-908a0993/" target="_blank" title="My LinkedIn profile"><img src="icons/linkedin-logo.png" style="width: 32px;"/></a>
+    </div>
+    <div class="header">
+        <h1>AlucardDH's development page</h1>
+        <div class="menu">
+            <a href="#aboutme" title="Shaders">About me</a>
+            <a href="#discord" title="Discord">Discord</a>
+            <a href="#shaders" title="Shaders">Shaders</a>
+        </div>
+    </div>
+
+    <div class="content">
+        <div id="aboutme" class="article">
+            <h1>About me</h1>
+            <p>
+                I'm born in 1986 and I'm a professional software engineer.
+                <br/>My development skill are wide but my main programming language is JAVA.
+                <br/>Developing shaders is a hobby on the side.
+                <br/>"DH" in AlucardDH are my initials: Damien Hembert.
+            </p>
+            <p class="linkIcon">
+                <a href="https://www.linkedin.com/in/damien-hembert-908a0993/" target="_blank" title="My LinkedIn profile"><img src="icons/linkedin-logo.png" style="width: 24px;"/>My LinkedIn profile</a>
+            </p>
+        </div>
+
+        <hr/>
+
+        <div id="discord" class="article">
+            <h1>Discord</h1>
+            <p>
+                <img src="icons/discord-logo.png" class="float-icon" />
+                <p>
+                    Join my Discord server to talk about my shaders or anything else. 
+                    <br/>There, I also publish news and releases.
+                </p>
+                <a href="https://discord.gg/V9HgyBRgMW" target="_blank" title="Invitation to Discord">https://discord.gg/V9HgyBRgMW</a>
+            </p>
+        </div>
+
+        <hr/>
+
+        <div id="shaders" class="article">
+            <h1>My ReShade shaders</h1>
+            <p>
+                <img src="icons/reshade-logo.png" class="float-icon" />
+                <p>
+                    "ReShade is a generic post-processing injector for games and video software" as stated by its <a href="https://reshade.me/" title="ReShade website">website</a>.
+                    <br/>It uses a custom language (<a href="https://github.com/crosire/reshade-shaders/blob/slim/REFERENCE.md" target="_blank" title="ReShadeFX REFERENCE page">ReShade FX</a>) which is an abstraction of various grpahic API shader languages (HLSL,GLSL).
+                </p>
+                <p>
+                    My shaders for ReShade are available on GitHub:
+                    <a href="https://github.com/AlucardDH/dh-reshade-shaders" target="_blank" title="Link to Github">https://github.com/AlucardDH/dh-reshade-shaders</a>
+                </p>
+            </p>
+
+            <hr/>
+            
+            <div class="shader">
+                <h2>DH_UBER_RT</h2>
+                <p>
+                    This shader is an All-in-one "Screen Space Ray Tracing" shader.
+                    <br/>It produce Global Illumination, Ambiant Occlusion and Reflections in a highly customizable little package.
+                </p>
+                <div class="images">
+                    <div class="image">
+                        <div class="title">Global Illumination layer</div>
+                        <img src="shaders/dh_uber_rt/1-dh_uber_rt-GI.jpg" alt="Global Illumination layer"/>
+                    </div>
+                    <div class="image">
+                        <div class="title">Ambiant Occlusion layer</div>
+                        <img src="shaders/dh_uber_rt/2-dh_uber_rt-AO.jpg" alt="Ambiant Occlusion layer"/>
+                    </div>
+                    <div class="image">
+                        <div class="title">Reflection layer</div>
+                        <img src="shaders/dh_uber_rt/3-dh_uber_rt-SSR.jpg" alt="Reflection layer"/>
+                    </div>
+                    <div class="image big">
+                        <div class="title">Everything applied</div>
+                        <img src="shaders/dh_uber_rt/4-dh_uber_rt-on.jpg" alt="Everything applied"/>
+                    </div>
+                </div>
+            </div>
+
+            <hr/>
+
+            <div class="shader">
+                <h2>DH_Lain</h2>
+                <p>
+                    This shader tries to reproduce the design of the shadows from the Anime <a href="https://en.wikipedia.org/wiki/Serial_Experiments_Lain" title="Serial Experiments Lain Wikipedia page">Serial Experiment Lain"</a>.
+                </p>
+                <div class="images">
+                    <div class="image half">
+                        <div class="title">Before</div>
+                        <img src="shaders/dh_lain/hl_original.png" alt="Lain Before"/>
+                    </div>
+                    <div class="image big">
+                        <div class="title">After</div>
+                        <img src="shaders/dh_lain/hl_lain.png" alt="Lain After"/>
+                    </div>
+                </div>
+            </div>
+
+            <hr/>
+
+            <div class="shader">
+                <h2>DH_Anime</h2>
+                <p>
+                    This shader can be used to create drawing/anime/manga effects :
+                    <ul>
+                        <li>lining</li>
+                        <li>shading</li>
+                        <li>saturation</li>
+                    </ul>
+                </p>
+                <div class="images">
+                    <div class="image half">
+                        <img src="shaders/dh_anime/TESV 2019-11-05 13-21-30.png"/>
+                    </div>
+                    <div class="image half">
+                        <img src="shaders/dh_anime/TESV 2019-11-05 13-23-08.png"/>
+                    </div>
+                    <div class="image half">
+                        <img src="shaders/dh_anime/TESV 2019-11-05 13-54-50.png"/>
+                    </div>
+                    <div class="image half">
+                        <img src="shaders/dh_anime/TESV 2019-11-05 13-55-17.png"/>
+                    </div>
+                </div>
+            </div>
+
+            <hr/>
+
+            <div class="shader">
+                <h2>DH_Undither</h2>
+                <p>
+                    This shader reduces dithering.
+                    <br/>It doesn't use Depth Buffer so it can be used with DosBox in old games.
+                </p>
+                <div class="images">
+                    <div class="image half">
+                        <img src="shaders/dh_undither/dh_undither1.png"/>
+                    </div>
+                    <div class="image half">
+                        <img src="shaders/dh_undither/dh_undither2.png"/>
+                    </div>
+                </div>
+            </div>
+
+            <hr/>
+
+            <div class="shader">
+                <h2>DH_Uniformity_correction</h2>
+                <p>
+                    This shader tries to correct screen uniformity and/or DSE (Dirty Screen Effect).
+                </p>
+                <div class="images">
+                    <div class="image half">
+                        <div class="title">Before correction, constrast amplified</div>
+                        <img src="shaders/dh_uniformity_correction/2_without_correction_test_amplified.jpg"/>
+                    </div>
+                    <div class="image half">
+                        <div class="title">After correction, constrast amplified</div>
+                        <img src="shaders/dh_uniformity_correction/4_correction_25-amplified.jpg"/>
+                    </div>
+                    <div class="image half">
+                        <div class="title">DSE, Before</div>
+                        <img src="shaders/dh_uniformity_correction/DSE_paperben_uniformity-correction-off.jpg"/>
+                    </div>
+                    <div class="image half">
+                        <div class="title">DSE, After</div>
+                        <img src="shaders/dh_uniformity_correction/DSE_paperben_uniformity-correction-on.jpg"/>
+                    </div>
+                </div>
+                <h3>How to use it</h3>
+                <ol>
+                    <li>Run a game with ReShade and the shader enabled</li>
+                    <li>Check <b>"Solid color"</b>, set <b>"Correction"</b> to 0 and set <b>"Brightness"</b> to a value that shows imperfections the best</li>
+                    <li>Take a photo of the screen in the dark before correction</li>
+                    <li>
+                        From this, create a texture of the defects by cropping and spreading histogram in a image editor (like Photoshop or <a href="https://www.getpaint.net/">Paint.net</a> (for free))
+                        <br/>Save this file in Textures folder with the name <b>"dh_uniformity_correction.png"</b>
+                    </li>
+                    <li>Restart the game with the new texture and increase <b>"Correction"</b> until you don't see imperfections anymore.</li>
+                    <li>Finally uncheck <b>"Solid color"</b></li>
+                    <li>Forget the idea to throw your monitor/TV to the recycle bin and enjoy.</li>
+                </ol>
+            </div>
+
+
+        </div>
+    </div>
+    
+</body>
+
+</html>
